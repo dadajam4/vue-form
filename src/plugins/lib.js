@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import { VueFormPlugin } from '~/lib';
+import VueFormPlugin from '~/lib';
 import * as components from '~/components';
 
 Vue.use(VueFormPlugin);
