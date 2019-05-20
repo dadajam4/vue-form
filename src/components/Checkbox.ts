@@ -1,5 +1,4 @@
-import { Component } from 'vue-property-decorator';
-import { Mixins } from 'vue-mixin-decorator';
+import { Component, Mixins } from 'vue-property-decorator';
 import Choice from '~/mixins/Choice';
 
 @Component({

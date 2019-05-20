@@ -17,12 +17,4 @@ module.exports = {
   globals: {
     vue: 'Vue',
   },
-  commonjs: {
-    namedExports: {
-      'vue-mixin-decorator/dist/vue-mixin-decorator.umd.js': [
-        'Mixin',
-        'Mixins',
-      ],
-    },
-  },
 };

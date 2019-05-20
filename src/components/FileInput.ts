@@ -1,6 +1,5 @@
 import { CreateElement, VNode } from 'vue/types';
-import { Component, Prop } from 'vue-property-decorator';
-import { Mixins } from 'vue-mixin-decorator';
+import { Component, Prop, Mixins } from 'vue-property-decorator';
 import { FormControl } from '~/lib';
 
 @Component({

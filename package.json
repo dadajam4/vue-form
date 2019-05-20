@@ -1,6 +1,6 @@
 {
   "name": "@dadajam4/vue-form",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Form core service based on vue 2 (SSR support)",
   "main": "dist/vue-form.common.js",
   "scripts": {
@@ -44,7 +44,6 @@
     "rollup-plugin-typescript2": "^0.21.0",
     "rollup-plugin-vue": "^5.0.0",
     "sass-loader": "^7.1.0",
-    "vue-mixin-decorator": "^1.1.1",
     "vue-property-decorator": "^8.1.1"
   },
   "dependencies": {

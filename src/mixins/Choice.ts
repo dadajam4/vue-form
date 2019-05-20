@@ -1,5 +1,5 @@
 import { CreateElement, VNode } from 'vue/types';
-import { Component, Mixins } from 'vue-mixin-decorator';
+import { Component, Mixins } from 'vue-property-decorator';
 import { FormChoice } from '~/lib';
 
 @Component
