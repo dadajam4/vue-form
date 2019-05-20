@@ -1402,9 +1402,17 @@ export class FormChoice extends Mixins(AbstractFormNode) {
 
     control.vf_addChoice(this);
     this.control = control;
+
     if (this[FORM_CHOICE_INPUT_PROP] || this._vf_initialChoiced) {
       this.choice();
       control.updateInitialValue();
+    }
+
+    const controlValue = control[FORM_VALUE_CONTROL_INPUT_PROP];
+    if (control.multiple) {
+      this.choiced = (controlValue || []).includes(this.value);
+    } else {
+      this.choiced = controlValue === this.value;
     }
 
     PATH_THROUGH_EVENTS.forEach(type => {

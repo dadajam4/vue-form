@@ -1,6 +1,6 @@
 {
   "name": "@dadajam4/vue-form",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Form core service based on vue 2 (SSR support)",
   "main": "dist/vue-form.common.js",
   "scripts": {

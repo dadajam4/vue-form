@@ -76,6 +76,20 @@
           { tag: 'checkbox', content: '同意する', props: { name: 'checkbox2', required: true } },
         ]"
     />
+
+    <div>
+      <p>{{ text2 }}</p>
+      <v-text-field v-model="text2"></v-text-field>
+    </div>
+    <div>
+      <p>{{ select2 }}</p>
+      <button type="button" @click="select2 = '2'">2にする</button>
+      <v-select v-model="select2" name="select2" rules="required">
+        <v-option value="1">項目1</v-option>
+        <v-option value="2">項目2</v-option>
+        <v-option value="3">項目3</v-option>
+      </v-select>
+    </div>
   </div>
 </template>
 
@@ -85,6 +99,8 @@ import { Component } from 'nuxt-property-decorator';
 
 @Component
 export default class IndexRoute extends Vue {
+  text2 = 'hoge';
+  select2 = '3';
   // hoge = 'fuga';
   // asyncData() {
   //   return new Promise(resolve => {
