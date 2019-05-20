@@ -34,7 +34,7 @@ export interface VueFormPluginOptions {
   components?: VueFormPluginComponentSettings | boolean;
 }
 
-export const VueFormPlugin: PluginObject<VueFormPluginOptions> = {
+const VueFormPlugin: PluginObject<VueFormPluginOptions> = {
   installed: false,
 
   install(Vue, options: VueFormPluginOptions = {}) {
@@ -72,3 +72,5 @@ export const VueFormPlugin: PluginObject<VueFormPluginOptions> = {
     Vue.prototype.$rules = Validators;
   },
 };
+
+export default VueFormPlugin;
