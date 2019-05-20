@@ -1,0 +1,29 @@
+.dev-control-debugger {
+  &__tab-body {
+    overflow-x: auto;
+  }
+
+  &__tab-info {
+    display: flex;
+    margin: 10px;
+
+    &__prop {
+      display: flex;
+
+      & + & {
+        margin-left: 1em;
+      }
+
+      &__label {
+        white-space: nowrap;
+        &:after {
+          content: ":";
+        }
+      }
+
+      &__value {
+        white-space: nowrap;
+      }
+    }
+  }
+}

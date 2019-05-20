@@ -1,0 +1,43 @@
+#########################
+# temporary files
+#########################
+npm-debug.log
+.DS_Store
+*.tmp
+.rpt2_cache
+.nuxt
+
+#########################
+# private files
+#########################
+
+# editor setting
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# modules
+node_modules
+
+# environments
+.node-version
+
+#########################
+# build files
+#########################
+dist
+docs
+types
+
+#########################
+# test coverage
+#########################
+coverage
+
+#########################
+# others
+#########################
+
+# for child directories...
+!.gitignore

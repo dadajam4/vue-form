@@ -1,0 +1,62 @@
+{
+  "name": "@dadajam4/vue-form",
+  "version": "0.1.0",
+  "description": "Form core service based on vue 2 (SSR support)",
+  "main": "dist/vue-form.common.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "nuxt",
+    "docs": "nuxt generate",
+    "build": "npm run docs && plugboy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dadajam4/vue-form.git"
+  },
+  "keywords": [
+    "vue",
+    "form",
+    "validate",
+    "typescript"
+  ],
+  "author": "dadajam4",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dadajam4/vue-form/issues"
+  },
+  "homepage": "https://github.com/dadajam4/vue-form#readme",
+  "devDependencies": {
+    "@dadajam4/plugboy": "^0.1.6",
+    "@fortawesome/fontawesome-free-webfonts": "^1.0.9",
+    "@nuxt/typescript": "^2.7.1",
+    "@vue/babel-preset-app": "^3.7.0",
+    "bulma": "^0.7.5",
+    "node-sass": "^4.12.0",
+    "nuxt": "^2.7.1",
+    "nuxt-property-decorator": "^2.1.3",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-css-only": "^1.0.0",
+    "rollup-plugin-sass": "^1.2.2",
+    "rollup-plugin-typescript2": "^0.21.0",
+    "rollup-plugin-vue": "^5.0.0",
+    "sass-loader": "^7.1.0",
+    "vue-mixin-decorator": "^1.1.1",
+    "vue-property-decorator": "^8.1.1"
+  },
+  "dependencies": {
+    "ts-node": "^8.1.0"
+  },
+  "files": [
+    "dist",
+    "types"
+  ],
+  "module": "dist/vue-form.esm.js",
+  "jsdelivr": "dist/vue-form.min.js",
+  "unpkg": "dist/vue-form.min.js",
+  "types": "types/index.d.ts",
+  "sideeffects": false
+}
