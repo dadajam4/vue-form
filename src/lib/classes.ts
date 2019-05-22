@@ -153,6 +153,7 @@ export class AbstractFormNode extends Vue implements AbstractFormNodeInternal {
   @Prop(Boolean) required!: boolean;
   @Prop(Boolean) disabled!: boolean;
   @Prop(Boolean) 'readonly'!: boolean;
+  @Prop(Boolean) loading!: boolean;
   @Prop(Boolean) alwaysValue!: boolean;
 
   @Prop({
@@ -270,6 +271,7 @@ export interface AbstractFormNode {
   value: any;
   isDisabled: boolean;
   isReadonly: boolean;
+  isLoading: boolean;
 }
 
 @Component
@@ -372,6 +374,10 @@ export class AbstractControl extends Mixins(AbstractFormNode) {
 
   get isReadonly(): boolean {
     return this.readonly || ((this.parent && this.parent.isReadonly) || false);
+  }
+
+  get isLoading(): boolean {
+    return this.loading || ((this.parent && this.parent.isLoading) || false);
   }
 
   get dirty(): boolean {
